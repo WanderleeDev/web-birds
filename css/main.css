@@ -108,28 +108,49 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: baseline;
   gap: 1.5rem;
   background-color: #2B092A;
 }
 .sub-list{
-  flex:0 1 15rem;
+  flex: 0 1 15rem;
   padding: 2rem;
 }
 .sub-list:hover{
   border-right: 1px dotted #95b9eb;
   transition: border-right 0.3s linear;
 }
+.author-card__title,
 .sub-list__title{
-  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
   padding: 2rem 0rem;
   text-align: left;
   color: #2d81f6;
   word-spacing: 0.3rem;
   letter-spacing: 0.1rem;
 }
-.sub-list__title--center{
+.author-card{
+  flex:0 1 15rem;
+  font-size: 0.8rem;
+  color: #e9e3eb;
+}
+.author-card__img {
+  width: 8rem;
+  margin: 0 auto 2rem;
+  border-radius: 50%;
+  border: dotted 0.2rem #fff;
+}
+.author-card__title{
   text-align: center;
+  word-spacing: 0.3rem;
+  letter-spacing: 0.1rem;
+  color: #2d81f6;
+}
+.author-card__content {
+  padding: 2rem 0;
+}
+.author-card__data {
+  line-height: 2;
 }
 .sub-list__container{
   flex-flow:column wrap;
@@ -137,12 +158,6 @@
 .sub-list__item{
   padding: 0.5rem 0.5rem 0.5rem 0rem;
   color: #fff;
-}
-.sub-list__image{
-  width: 6rem;
-  margin: 0 auto;
-  padding-bottom: 1rem;
-  border-radius: 50%;
 }
 .sub-list__link{
   font-size: 0.8rem;
