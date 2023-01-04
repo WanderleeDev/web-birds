@@ -73,11 +73,13 @@
   grid-area: main;
   display: grid;
   grid-template-columns: repeat(6,minmax(auto,1fr));
-  grid-template-rows: auto;
+  grid-template-rows:  auto repeat(3,auto);
   grid-template-areas: 
   "banner banner banner banner banner banner"
   "galery galery galery galery galery galery"
-  "div div div div div div";
+  "form form form form form form"
+  "extra extra extra extra extra extra";
+  ;
 }
 .banner {
   grid-area: banner;
@@ -103,9 +105,44 @@
   height: max(18vw, 10rem);
   object-fit: fill;
 }
+/* form */
+.form-contac {
+  grid-area: form;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  gap: 1.5rem;
+  padding: 4rem 0;
+  background-color: #fff;
+}
+.form-contac__sub-section {
+  flex: 0 1 10rem;
+  border: solid 0.1rem red;
+  padding: 2rem;
 
+}
+.form-contac__sub-section:hover {
+  background-color: #43074141;
+
+}
+.form-contac__question-container{
+  display: flex;
+  /* justify-content: space-between; */
+  flex-flow: row wrap;
+  gap: 1rem;
+}
+.form-contac__question-container{
+
+}
+.form-contac__btn-container{
+  flex: 0 0 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+.form-contac__btn {
+}
 /* footer */
-.hero__footer{
+.hero__footer {
   grid-area: footer;
   display: flex;
   flex-flow: row wrap;
@@ -114,7 +151,7 @@
   gap: 1.5rem;
   background-color: #230722;
 }
-.sub-list{
+.sub-list {
   flex: 0 1 15rem;
   padding: 2rem;
   margin-top: 2rem;
