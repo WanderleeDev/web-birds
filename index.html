@@ -97,7 +97,7 @@
 
       <div class="section-form__template">
         <figure class="section-form__container-img">
-          <img class="section-form__img" src="/aseets/mensaje.png" alt="carta de mensaje">
+          <img class="section-form__img" src="https://www.dropbox.com/s/ulunec5igsyqt0c/Sent%20messages%20_Monochromatic.svg?raw=1" alt="carta de mensaje">
         </figure>
         <form class="form-contac" action="">
           <div class="form-contac__sub-section">
@@ -107,7 +107,7 @@
             </div>
             <div class="form-contac__question-container">
               <label class="form-contac__question" for="surname">Apellidos : </label>
-              <input class="form-contac__reply" id="surname" type="text" placeholder="two suenames">
+              <input class="form-contac__reply" id="surname" type="text" placeholder="two sunames">
             </div>
             <div class="form-contac__question-container">
               <label class="form-contac__question" for="age">Edad: </label>
@@ -115,25 +115,55 @@
             </div>
             <div class="form-contac__question-container">
               <label class="form-contac__question" for="phone">Telf/cel : </label>
-              <input class="form-contac__reply" id="phone" type="tel" placeholder="Include your prefix example: +51">
+              <input class="form-contac__reply" id="phone" type="tel" placeholder="Include your prefix">
+            </div>
+            <div class="form-contac__question-container">
+              <label class="form-contac__question" for="mail">E-mail : </label>
+              <input class="form-contac__reply" id="mail" type="email" placeholder="@example.com">
+            </div>
+            <div class="form-contac__question-container">
+              <label class="form-contac__question " for="language">Idiomas : </label>
+              <select class="form-contac__reply form-contac__reply--w-100" name="language" id="language">
+                <option class="form-contac__option" value="spanish">Español</option>
+                <option class="form-contac__option" value="english">Inglés</option>
+                <option class="form-contac__option" value="both of them">Ambos</option>
+                <option class="form-contac__option" value="neither" selected>Ninguno</option>
+              </select>
             </div>
           </div>
           <div class="form-contac__sub-section">
             <div class="form-contac__question-container">
-              <label class="form-contac__question" for="name">Nombre : </label>
-              <input class="form-contac__reply" id="name" type="text" placeholder="just a name">
+              <label class="form-contac__question" for="appointment">Horario de contacto: </label>
+              <input class="form-contac__reply form-contac__reply--w-100" id="appointment" type="datetime-local" name="appointment" required>
             </div>
             <div class="form-contac__question-container">
-              <label class="form-contac__question" for="surname">Apellidos : </label>
-              <input class="form-contac__reply" id="surname" type="text" placeholder="two suenames">
+              <label class="form-contac__question" >Estudios:</label>
+              <div>
+                <input class="form-contac__reply " id="basic" type="radio" name="training">
+                <label for="basic">Básico</label>
+              </div>
+              <div>
+                <input class="form-contac__reply " id="technical" type="radio" name="training">
+                <label for="technical">Intermedio</label>
+              </div>
+              <div>
+                <input class="form-contac__reply " id="superior" type="radio" name="training">
+                <label for="superior">Superior</label>
+              </div>
             </div>
             <div class="form-contac__question-container">
-              <label class="form-contac__question" for="age">Edad: </label>
-              <input class="form-contac__reply" id="age" type="number" placeholder="adults only" min="18" required>
+              <label class="form-contac__question" for="comment">Comentario: </label>
+              <textarea class="form-contac__reply form-contac__reply--resize-none"  name="comment" cols="22" rows="10" id="comment" placeholder="summarize your doubt or comment"></textarea>
+            </div>
+          </div>
+          <div class="form-contac__T-y-C">
+            <div class="form-contac__question-container">
+              <input class="form-contac__reply" id="tyc" type="checkbox" checked>
+              <label class="form-contac__question form-contac__question--d-inline" for="tyc">Aceptar <a class="form-contac__question__link" href="#" rel="noopener">términos y condiciones</a> </label>
             </div>
             <div class="form-contac__question-container">
-              <label class="form-contac__question" for="phone">Telf/cel : </label>
-              <input class="form-contac__reply" id="phone" type="tel" placeholder="Include your prefix example: +51">
+              <input class="form-contac__reply" id="bulletin" type="checkbox">
+              <label class="form-contac__question form-contac__question--d-inline" for="bulletin">Recibir boletín semanal</label>
             </div>
           </div>
           <div class="form-contac__btn-container">
