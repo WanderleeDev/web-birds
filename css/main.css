@@ -36,26 +36,19 @@
   animation: fly-bird 0.7s steps(9) infinite;
   transition: 0.4s ease-in-out;
 }
-.main-header__logo:hover{
-  transform: scale(1.2);
-}
 .main-header__title{
   font-size: min(5rem, 15vw);
 }
-
 
 /* bloque navbar */
 .u-list{
   display: flex;
 }
-
 .u-list__link{
   font-size: 1rem;
   transition: 0.1s linear;
 }
-.u-list__link:hover{
-  color: #fffb82;
-}
+
 /* navbar */
 .navbar{
   gap: 2rem;
@@ -80,9 +73,9 @@
   grid-template-rows:  auto repeat(3,auto);
   grid-template-areas: 
   "banner banner banner banner banner banner"
+  "intro intro intro intro intro intro"
   "galery galery galery galery galery galery"
-  "form form form form form form"
-  "extra extra extra extra extra extra";
+  "form form form form form form";
   ;
   background-color: #e9e3eb;
 }
@@ -92,6 +85,73 @@
   background: url(/aseets/mountain-purple.svg) no-repeat center;
   background-size: cover;
 }
+/* intro */
+.intro-container {
+  grid-area: intro;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 4rem;
+  padding: 2rem max(10vw);
+  border: solid 1px;
+  overflow-x: hidden;
+}
+.intro-container__title{
+  text-align: center;
+}
+.intro-container__proyect{
+  position: relative;
+  /* flex: 0 1 ; */
+  align-self: flex-start;
+  padding: 2rem 0;
+  z-index: 0;
+  box-shadow: 0.2rem 0.2rem 0.3rem rgb(0, 0, 0, 0.2),
+  -0.2rem -0.2rem 0.3rem rgb(0, 0, 0, 0.2);
+}
+.intro-container__proyect--align-self-end{
+  align-self: flex-end;
+}
+.project__title{
+  padding: 2rem 0;
+  letter-spacing: 0.1rem;
+}
+.project__title--rigth{
+  text-align: right;
+}
+.project__description{
+  padding: 2rem;
+  margin: 0 auto ;
+  line-height: 1.2;
+  font-size:1.2rem;
+  font-weight: 500;
+}
+.project__description::after{
+  position:absolute;
+  inset: 0;
+  content: "";
+  background-color: #fff;
+  z-index: -2;
+}
+.project__description:before{
+  position:absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(/aseets/335222-3f51b5.svg);
+  background-size: contain;
+  background-position: center;
+  animation: moving-flower 25s linear infinite ;
+  z-index: -1;
+}
+  .project__container-bird{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -3;
+  transition: 6s linear 0.2s;
+}
+/* galery */
 .bird-container {
   width: 100%;
   grid-area: galery;
@@ -180,9 +240,6 @@
   content: "";
   z-index: -1;
 }
-.form-contac__sub-section:hover.form-contac__sub-section::before{
-  clip-path: circle(130.6% at 8% 7%);
-}
 .form-contac__question-container{
   margin: 1rem auto;
 }
@@ -241,16 +298,6 @@
   z-index: 1;
   cursor: pointer;
 }
-.form-contac__btn:hover{
-  color: #7911d4;
-}
-.form-contac__btn:hover.form-contac__btn::before {
-  animation: roll 10s linear infinite;
-  visibility: visible;
-}
-.form-contac__btn:hover.form-contac__btn::after {
-  background-color: #fff;
-}
 .form-contac__btn::before{
   position: absolute;
   top: 50%;
@@ -289,11 +336,6 @@
   padding: 2rem;
   margin-top: 2rem;
   min-height: 30rem;
-}
-.sub-list:hover{
-  border-radius: 0 2rem 0 2rem;
-  background: #430741;
-  transition: background 0.2s linear;
 }
 .author-card__title,
 .sub-list__title{
@@ -336,9 +378,6 @@
   gap: 1rem;
   padding:0.5rem;
   color: #fff;
-}
-.u-list__item--flex:hover{
-  color :#fffb82;
 }
 .sub-list__social-image{
   width: max(3vw, 2rem);
@@ -391,6 +430,55 @@
   border-top: dotted 0.15rem #fff;
   padding: 2rem;
   color: #fff;
+}
+/* pseudoclases */
+.main-header__logo:hover{
+  transform: scale(1.2);
+}
+.u-list__link:hover{
+  color: #fffb82;
+}
+.u-list__item--flex:hover{
+  color :#fffb82;
+}
+.intro-container__proyect:hover .project__container-bird{   
+  transition: transform 3s ease;
+  animation: bird-surprise 3s ease 1 forwards;
+}
+.form-contac__sub-section:hover.form-contac__sub-section::before{
+  clip-path: circle(130.6% at 8% 7%);
+}
+.form-contac__sub-section:hover{
+  transform: scale(1.05);
+  transition: transform 0.2s linear;
+}
+.form-contac__btn:hover{
+  color: #7911d4;
+}
+.sub-list:hover{
+  border-radius: 0 2rem 0 2rem;
+  background: #430741;
+  transition: background 0.2s linear;
+}
+.form-contac__btn:hover.form-contac__btn::before {
+  animation: roll 10s linear infinite;
+  visibility: visible;
+}
+.form-contac__btn:hover.form-contac__btn::after {
+  background-color: #fff;
+}
+/* keyframes */
+@keyframes moving-flower {
+  0%{
+    background-position: 0%, 150%;
+  }
+  50%{
+    background-position: 150%, 0%;
+    filter: hue-rotate(360deg);
+  }
+  100%{
+    background-position: 0, 150%;
+  }
 }
 @keyframes backg-move {
   0%{
@@ -488,14 +576,13 @@
     background-position: -900px;
   }
 }
-@keyframes fly-bird-2 {
+@keyframes bird-surprise{
   0%{
-    background-position: 0;
-    transform: rotateZ(0deg);
+  transform: translateX(0rem);
   }
+
   100%{
-    background-position: -900px;
-    transform: rotateZ(360deg);
+  transform: translateX(70rem) scale(1.4);
   }
 }
 @media only screen and (max-width: 61.9rem){
@@ -516,9 +603,6 @@
     flex: 0 1 15rem;
     margin-right: 2rem;
     border-radius: 2rem;
-  }
-  .sub-list:hover{
-    border-right: none;
   }
 }
 @media only screen and (max-width: 32.5rem){
