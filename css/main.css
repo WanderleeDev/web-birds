@@ -1,5 +1,6 @@
 :root{
   --back-gradient-1: linear-gradient(71.18deg,rgb(0,34,255),rgb(0,34,255),rgba(81,121,254),rgb(165,237,182),rgb(250,232,90),rgb(253,172,62),rgb(255,92,0));
+  scroll-behavior: smooth;
 }
 
 .hero {
@@ -100,7 +101,6 @@
 }
 .intro-container__proyect{
   position: relative;
-  /* flex: 0 1 ; */
   align-self: flex-start;
   padding: 2rem 0;
   z-index: 0;
@@ -111,6 +111,7 @@
   align-self: flex-end;
 }
 .project__title{
+  position: relative;
   padding: 2rem 0;
   letter-spacing: 0.1rem;
 }
@@ -149,7 +150,17 @@
   top: 0;
   right: 0;
   z-index: -3;
-  transition: 6s linear 0.2s;
+  transition: 3s linear 0.2s;
+}
+.bird-fly--bird-silver{
+  background-image: url(/aseets/loro-gray.png);
+}
+.bird-fly--rotateY-180--bird-green{
+  transform: rotateY(180deg);
+  background-image: url(/aseets/loro-green.png);
+}
+.bird-fly--bird-gray{
+  background-image: url(/aseets/loro-silver.png);
 }
 /* galery */
 .bird-container {
@@ -443,8 +454,13 @@
 }
 .intro-container__proyect:hover .project__container-bird{   
   transition: transform 3s ease;
-  animation: bird-surprise 3s ease 1 forwards;
+  animation: surprise-bird 5s ease 1 forwards;
 }
+.intro-container__proyect:hover .project__container-bird--keyframe-reverse{   
+  transition: transform 3s ease;
+  animation: surprise-bird-reverse 5s ease  forwards;
+}
+
 .form-contac__sub-section:hover.form-contac__sub-section::before{
   clip-path: circle(130.6% at 8% 7%);
 }
@@ -576,7 +592,7 @@
     background-position: -900px;
   }
 }
-@keyframes bird-surprise{
+@keyframes surprise-bird{
   0%{
   transform: translateX(0rem);
   }
@@ -585,6 +601,18 @@
   transform: translateX(70rem) scale(1.4);
   }
 }
+@keyframes surprise-bird-reverse{
+  0%{
+  left: 0;
+  transform: translateX(0rem);
+  }
+
+  100%{
+  left: 0;
+  transform: translateX(-70rem);
+  }
+}
+/* mediaQueries */
 @media only screen and (max-width: 61.9rem){
   .nav-container{
     display: none;
@@ -605,11 +633,87 @@
     border-radius: 2rem;
   }
 }
+@media only screen and (max-width: 48.75rem){
+  .intro-container__proyect{   
+    pointer-events: none;
+  }
+  .project__container-bird{
+    z-index: -1;
+  }
+}
 @media only screen and (max-width: 32.5rem){
   .sub-list{
     min-height: auto;
   }
   .flock-birds{
     background-color: transparent;
+  }
+  .project__title::before{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 3rem;
+    height: 3rem;
+    content: "";
+    background: #f4ce0f32;
+    clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+  }
+  .project__title::after{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-3.75rem) translateX(2.25rem);
+    width: 3rem;
+    height: 3rem;
+    content: "";
+    background: #63636232;
+    clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+  }
+  .project__title--rigth::before{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 3rem;
+    height: 3rem;
+    content: "";
+    background: #74BD4A53;
+    clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+  }
+  .project__title--rigth::after{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-3.75rem) translateX(2.25rem);
+    width: 3rem;
+    height: 3rem;
+    content: "";
+    background: #e67f7f32;
+    clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+  }
+  .project__title--bef-red::before{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 3rem;
+    height: 3rem;
+    content: "";
+    background: #e67f7f32;
+    clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+  }
+  .project__description{
+    margin:0 1rem;
+    background-color: #F4CF0F53;
+  }
+  .project__description--bg-green{
+    background-color: #74BD4A53;
+  }
+  .project__description--bg-gray{
+    background-color: #A0989553;
+  }
+  .project__description:before{   
+    background-image: none;
   }
 }
