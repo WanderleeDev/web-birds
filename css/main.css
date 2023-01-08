@@ -198,8 +198,8 @@
 .bird-fly--bird-gray{
   background-image: url(/aseets/loro-silver.png);
 }
-/* galery */
-.bird-container {
+/* gallery */
+.gallery{
   width: 100%;
   grid-area: galery;
   display: flex;
@@ -209,12 +209,45 @@
   gap: 2rem;
   padding: 6rem 0.5rem;
 }
-.bird-container__card {
+.gallery__card {
+  position: relative;
   flex: 0 1 max(18vw, 10rem);
 }
-.bird-container__img {
+.gallery__img {
   height: max(18vw, 10rem);
   object-fit: fill;
+}
+.gallery__icon-container{
+  display: flex;
+  position:absolute;
+  bottom: 0;
+  width: 100%;
+  justify-content: space-evenly;
+  gap: 2rem;
+  background: rgba(0, 0, 0, 0.496);
+  opacity: 0;
+}
+.gallery__icon-btn{
+  width: 2rem;
+  height: 2rem;
+  padding: 0.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+.gallery__card:nth-child(2n + 2):hover{
+  transform: scale(1.1);
+  transition: transform 0.2s linear;
+  }
+.gallery__card:hover .gallery__icon-container{
+  opacity: 1;
+  transition: opacity  0.1s linear;
+}
+.gallery__icon-btn:hover{
+  background-color: #ffffff53;
+  transform: scale(0.8);
+  transition: transform 0.1s linear;
 }
 /* form */
 .section-form{
