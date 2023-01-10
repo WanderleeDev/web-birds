@@ -245,24 +245,6 @@
   transform: scale(0.8);
   animation: scaleBtn 1.5s linear infinite;
 }
-@keyframes scaleBtn {
-  0%{
-    transform: scale(0.8);
-  }
-  25%{
-    transform: scale(0.7);
-  }
-  50%{
-    transform: scale(0.6) rotateY(90deg);
-  }
-  75%{
-    transform: scale(0.7);
-  }
-  100%{
-    transform: scale(0.8);
-  }
-}
-
 /* gallery */
 .gallery{
   width: 100%;
@@ -899,8 +881,10 @@
   .navbar__toggle{
     display: inline-block;
     margin-right: 1rem;
+    border: none;
     font-size: 3rem;
     font-weight: 900;
+    background-color: #f6a8db;
     cursor: pointer;
   }
 }
@@ -928,7 +912,6 @@
     right: -2.5%;
     border-radius: 50%;
     color: #fff;
-    background-color: #f6a8db;
     text-align: center;
     z-index: 2;
     opacity: 0.7;
