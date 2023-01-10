@@ -33,14 +33,13 @@
   display: block;
   width: 6.25rem;
   height: 5rem;
-  background: url(/aseets/parrot-1.png) no-repeat;
+  background: url(https://www.dropbox.com/s/2l0c0covr6te850/parrot-1.png?raw=1) no-repeat;
   animation: fly-bird 0.7s steps(9) infinite;
   transition: 0.4s ease-in-out;
 }
 .main-header__title{
   font-size: min(5rem, 15vw);
 }
-
 /* bloque navbar */
 .u-list{
   display: flex;
@@ -65,7 +64,6 @@
 .navbar__toggle{
   display: none;
 }
-
 /* main */
 .hero__main {
   grid-area: main;
@@ -124,7 +122,6 @@
   width: 2.5rem;
   height: 2.5rem;
   background-color: #f104e953;
-
   transform: translateX(75%) translateY(75%);
   clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
   z-index: -1;
@@ -189,15 +186,82 @@
   transition: 3s linear 0.2s;
 }
 .bird-fly--bird-silver{
-  background-image: url(/aseets/loro-gray.png);
+  background-image: url(https://www.dropbox.com/s/5oa98ui525thj61/loro-gray.png?raw=1);
 }
 .bird-fly--rotateY-180--bird-green{
   transform: rotateY(180deg);
-  background-image: url(/aseets/loro-green.png);
+  background-image: url(https://www.dropbox.com/s/7nqryl65pxz26dx/loro-green.png?raw=1);
 }
 .bird-fly--bird-gray{
-  background-image: url(/aseets/loro-silver.png);
+  background-image: url(https://www.dropbox.com/s/fuup26xakegp7uo/loro-silver.png?raw=1);
 }
+.up-btn__container{
+  position: fixed;
+  bottom: 15%;
+  right: 1%;
+  border-radius: 50%;
+  opacity: 0.7;
+  z-index: 4; 
+}
+/* up-btn */
+.up-btn{
+  position: relative;
+  display: inline-block;
+  width: max(4rem, 4.5vw);
+  height: max(4rem, 4.5vw);
+  border-radius: 50%;
+  background-color: #e9e3eb;
+  overflow: hidden;
+  z-index: 0; 
+}
+.up-btn::before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 10%;
+  top: 50%;
+  left: 50%;
+  background: linear-gradient(to left, #000, #984);
+  box-shadow: 1rem 1rem 1rem #000, -1rem -1rem 1rem #984;
+  transform: translate(-50%, -50%);
+  animation: roll 10s ease-in-out infinite;
+  z-index: -2;
+}
+.up-btn::after{
+  position: absolute;
+  border-radius: 50%;
+  background-color: #fff;
+  content: "";
+  inset: 0.15rem;
+  z-index: -1;
+}
+.up-btn__link{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://www.dropbox.com/s/8h5g7dru8j2f1az/to-up.png?raw=1);
+  background-size: cover;
+  transform: scale(0.8);
+  animation: scaleBtn 1.5s linear infinite;
+}
+@keyframes scaleBtn {
+  0%{
+    transform: scale(0.8);
+  }
+  25%{
+    transform: scale(0.7);
+  }
+  50%{
+    transform: scale(0.6) rotateY(90deg);
+  }
+  75%{
+    transform: scale(0.7);
+  }
+  100%{
+    transform: scale(0.8);
+  }
+}
+
 /* gallery */
 .gallery{
   width: 100%;
@@ -368,10 +432,6 @@
   opacity: 1;
   transition: top 0.8s ease-in-out 0.5s, left 0.8s ease-in-out 0.5s, box-shadow 0.5s linear;
 }
-
-
-
-
 /* form */
 .section-form{
   grid-area: form;
@@ -602,15 +662,15 @@
   background-color: #fff;
 }
 .flock-birds__bird--green{
-  background-image: url(/aseets/loro-green.png);
+  background-image: url(https://www.dropbox.com/s/7nqryl65pxz26dx/loro-green.png?raw=1);
   animation-delay: 0.2s;
 }
 .flock-birds__bird--silver{
-  background-image: url(/aseets/loro-silver.png);
+  background-image: url(https://www.dropbox.com/s/fuup26xakegp7uo/loro-silver.png?raw=1);
   animation-delay: 0.4s;
 }
 .flock-birds__bird--gray{
-  background-image: url(/aseets/loro-gray.png);
+  background-image: url(https://www.dropbox.com/s/5oa98ui525thj61/loro-gray.png?raw=1);
   animation-delay: 0.6s;
 }
 .flock-birds__subcontainer{
@@ -644,6 +704,15 @@
 .u-list__item--flex:hover{
   color :#fffb82;
 }
+/* navbar */
+.navbar__toggle:hover{
+  transform: scale(0.9);
+  transition: transform 0.3s linear;
+}
+.navbar__toggle:hover .nav-container{
+  display: block;
+}
+/* intro */
 .intro-container__proyect:hover .project__container-bird{   
   transition: transform 3s ease;
   animation: surprise-bird 5s ease 1 forwards;
@@ -697,6 +766,23 @@
   }
   100%{
     background-position: 0, 100%;
+  }
+}
+@keyframes scaleBtn {
+  0%{
+    transform: scale(0.8);
+  }
+  25%{
+    transform: scale(0.7);
+  }
+  50%{
+    transform: scale(0.6) rotateY(90deg);
+  }
+  75%{
+    transform: scale(0.7);
+  }
+  100%{
+    transform: scale(0.8);
   }
 }
 @keyframes roll {
@@ -810,12 +896,11 @@
     display: none;
   }
   .navbar__toggle{
-    display: inline;
+    display: inline-block;
     margin-right: 1rem;
     font-size: 3rem;
     font-weight: 900;
     cursor: pointer;
-    color: rgb(230, 230, 230);
   }
 }
 @media only screen and (max-width: 49rem){
@@ -834,6 +919,20 @@
   }
 }
 @media only screen and (max-width: 32.5rem){
+  .navbar__toggle{
+    position: fixed;
+    width: max(4rem, 4.5vw);
+    height: max(4rem, 4.5vw);
+    bottom: 1%;
+    right: -2.5%;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #f6a8db;
+    text-align: center;
+    z-index: 2;
+    opacity: 0.7;
+    line-height: 1.3;
+  }
   .sub-list{
     min-height: auto;
   }
