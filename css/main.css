@@ -11,6 +11,7 @@
   "header header header header header header"
   "main   main   main   main   main  main"
   "footer footer footer footer footer footer";
+  font-family: 'Open Sans', sans-serif;
 }
 .hero__header {
   grid-area: header;
@@ -38,14 +39,14 @@
   transition: 0.4s ease-in-out;
 }
 .main-header__title{
-  font-size: min(5rem, 15vw);
+  font-size: max(3rem, 5.5vw);
 }
 /* bloque navbar */
 .u-list{
   display: flex;
 }
 .u-list__link{
-  font-size: 1rem;
+  font-size: 0.75rem;
   transition: 0.1s linear;
 }
 
@@ -155,7 +156,7 @@
   padding: 2rem;
   margin: 0 auto ;
   line-height: 1.2;
-  font-size:1.2rem;
+  font-size:1rem;
   font-weight: 500;
 }
 .project__description::after{
