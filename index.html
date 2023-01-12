@@ -19,24 +19,24 @@
   <header class="hero__header">
     <div class="main-header">
       <a href="index.html" class="main-header__logo bird-fly" rel="noopener"></a>
-      <h1 id="main-header__title" class="main-header__title">
+      <h1 class="main-header__title">
         <a href="index.html" rel="noopener">Birds</a>
       </h1>
     </div>
-    <button class="navbar__toggle">&equiv;</button>
-    <nav class="nav-container">
+    <button id="btnMenu" class="navbar__toggle">&equiv;</button>
+    <nav id="menu" class="nav-container">
       <ul class="navbar u-list">
-        <li class="navbar__item u-list__item"><a class="navbar__link u-list__link" href="#intro" rel="noopener">¿Bird?</a></li>
-        <li class="navbar__item u-list__item"><a class="navbar__link u-list__link" href="#gallery" rel="noopener">gallery</a></li>
-        <li class="navbar__item u-list__item"><a class="navbar__link u-list__link" href="#form" rel="noopener">over you</a></li>
-        <li class="navbar__item u-list__item"><a class="navbar__link u-list__link" href="#footer" rel="noopener">About us</a></li>
-        <li class="navbar__item u-list__item"><a class="navbar__link u-list__link" href="/extra/grid.html" rel="noopener">extra</a></li>
+        <li class="navbar__item u-list__item"><a id="navbarLink" class="navbar__link u-list__link" href="#intro" rel="noopener">¿Bird?</a></li>
+        <li class="navbar__item u-list__item"><a id="navbarLink" class="navbar__link u-list__link" href="#gallery" rel="noopener">gallery</a></li>
+        <li class="navbar__item u-list__item"><a id="navbarLink" class="navbar__link u-list__link" href="#form" rel="noopener">over you</a></li>
+        <li class="navbar__item u-list__item"><a id="navbarLink" class="navbar__link u-list__link" href="#footer" rel="noopener">About us</a></li>
+        <li class="navbar__item u-list__item"><a id="navbarLink" class="navbar__link u-list__link" href="/extra/grid.html" rel="noopener">extra</a></li>
       </ul>
     </nav>
   </header>
   <main class="hero__main">
     <!-- Banner -->
-    <div class="banner"></div>
+    <div id="banner" class="banner"></div>
     <!-- Intro -->
     <section id="intro" class="intro-container">
       <header><h2 class="title-base">Welcome to web-birds
@@ -44,7 +44,7 @@
       <!-- card N°1 -->
       <article class="intro-container__proyect">
         <header>
-          <h3 class="project__title project-title-shape">What is bird? </h3>
+          <h3 class="project__title ">What is bird? </h3>
           <div class="project__square-logo">
             <span class="project__square project__square-1"></span>
             <span class="project__square project__square-2"></span>
@@ -76,8 +76,8 @@
         </div>
       </article>
       <div class="up-btn__container">
-        <div id="#main-header__title" class="up-btn">
-          <a class="up-btn__link" href="#main-header__title" rel="noopener"></a>
+        <div id="#banner" class="up-btn">
+          <a class="up-btn__link" href="#banner" rel="noopener"></a>
         </div>
       </div>
         <!-- card N°3 -->
@@ -90,7 +90,7 @@
             <span class="project__square project__square-3 project__square-3--red "></span>
           </div>
         </header>
-        <p class="project__description project__description--bg-gray">
+        <p class="project__description project__description--before-js project__description--bg-gray">
           It is a page created to practice html, css and apply BEM methodology
         </p>
         <div class="project__container-bird">
@@ -102,163 +102,163 @@
     <section id="gallery" class="gallery">
       <header class="gallery__header"><h2 class="title-base">Bird gallery</h2></header>
       <div class="gallery__card">
-        <img loading="lazy" src="https://www.dropbox.com/s/h1dzpzddjdshpnq/foto1.webp?raw=1" alt="foto de ave 1" class="gallery__img">
+        <img loading="lazy" src="https://www.dropbox.com/s/euenz6mrjdkoggy/foto1.jpg?raw=1" alt="foto de ave 1" class="gallery__img">
         <div class="gallery__icon-container">
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/75fkzzpj2vw6nja/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/xfkk4efiu899d6s/internet.png?raw=1" title="busacr en la web" alt="buscar en internet"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/bei3xly9f4iam6l/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/0f41vwbu303pggz/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/i74ki5a7rn7701d/internet.png?raw=1" title="buscar en la web" alt="buscar en internet"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/f2tqwtsbq2b0x0o/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
         </div>
       </div>
       <div class="gallery__card">
-        <img loading="lazy" src="https://www.dropbox.com/s/wrjgpxwo0wefqrh/foto2.jpg?raw=1" alt="fot de ave 2" class="gallery__img">
+        <img loading="lazy" src="https://www.dropbox.com/s/sfmbcdnz9kflgks/foto2.jpg?raw=1" alt="fot de ave 2" class="gallery__img">
         <div class="gallery__icon-container">
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/75fkzzpj2vw6nja/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/xfkk4efiu899d6s/internet.png?raw=1" title="busacr en la web" alt="buscar en internet"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/bei3xly9f4iam6l/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/0f41vwbu303pggz/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/i74ki5a7rn7701d/internet.png?raw=1" title="buscar en la web" alt="buscar en internet"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/f2tqwtsbq2b0x0o/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
         </div>
       </div>
       <div class="gallery__card">
-        <img loading="lazy" src="https://www.dropbox.com/s/vjlxlqdqjvqy73k/foto3.jpg?raw=1" alt="fot de ave 3" class="gallery__img">
+        <img loading="lazy" src="https://www.dropbox.com/s/8koegt0nfju12mj/foto3.jpg?raw=1" alt="fot de ave 3" class="gallery__img">
         <div class="gallery__icon-container">
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/75fkzzpj2vw6nja/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/xfkk4efiu899d6s/internet.png?raw=1" title="busacr en la web" alt="buscar en internet"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/bei3xly9f4iam6l/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/0f41vwbu303pggz/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/i74ki5a7rn7701d/internet.png?raw=1" title="buscar en la web" alt="buscar en internet"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/f2tqwtsbq2b0x0o/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
         </div>
       </div>
       <div class="gallery__card">
-        <img loading="lazy" src="https://www.dropbox.com/s/znv04zjksiz1s3x/foto4.jpg?raw=1" alt="fot de ave 4" class="gallery__img">
+        <img loading="lazy" src="https://www.dropbox.com/s/0uj27iuuw2quhkd/foto4.jpg?raw=1" alt="fot de ave 4" class="gallery__img">
         <div class="gallery__icon-container">
-          <button class="gallery__icon-btn"   ><img src="https://www.dropbox.com/s/75fkzzpj2vw6nja/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/xfkk4efiu899d6s/internet.png?raw=1" title="busacr en la web" alt="buscar en internet"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/bei3xly9f4iam6l/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
+          <button class="gallery__icon-btn"   ><img src="https://www.dropbox.com/s/0f41vwbu303pggz/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/i74ki5a7rn7701d/internet.png?raw=1" title="buscar en la web" alt="buscar en internet"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/f2tqwtsbq2b0x0o/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
         </div>
       </div>
       <div class="gallery__card">
-        <img loading="lazy" src="https://www.dropbox.com/s/yhr01roxnyq1qpj/foto5.jpg?raw=1" alt="fot de ave 5" class="gallery__img">
+        <img loading="lazy" src="https://www.dropbox.com/s/z8hk5jh38290gaw/foto5.jpg?raw=1" alt="fot de ave 5" class="gallery__img">
         <div class="gallery__icon-container">
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/75fkzzpj2vw6nja/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/xfkk4efiu899d6s/internet.png?raw=1" title="busacr en la web" alt="buscar en internet"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/bei3xly9f4iam6l/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/0f41vwbu303pggz/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/i74ki5a7rn7701d/internet.png?raw=1" title="buscar en la web" alt="buscar en internet"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/f2tqwtsbq2b0x0o/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
         </div>
       </div>
       <div class="gallery__card">
-        <img loading="lazy" src="https://www.dropbox.com/s/uspdqpszdnyo442/foto6.jpg?raw=1" alt="fot de ave 6" class="gallery__img">
+        <img loading="lazy" src="https://www.dropbox.com/s/mx1cwoagpuar0u1/foto6.jpg?raw=1" alt="fot de ave 6" class="gallery__img">
         <div class="gallery__icon-container">
-          <button class="gallery__icon-btn"   ><img src="https://www.dropbox.com/s/75fkzzpj2vw6nja/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/xfkk4efiu899d6s/internet.png?raw=1" title="busacr en la web" alt="buscar en internet"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/bei3xly9f4iam6l/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
+          <button class="gallery__icon-btn"   ><img src="https://www.dropbox.com/s/0f41vwbu303pggz/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/i74ki5a7rn7701d/internet.png?raw=1" title="buscar en la web" alt="buscar en internet"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/f2tqwtsbq2b0x0o/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
         </div>
       </div>
       <div class="gallery__card">
-        <img loading="lazy" src="https://www.dropbox.com/s/bpm5sx91aknwuk8/foto7.jpg?raw=1" alt="fot de ave 7" class="gallery__img">
+        <img loading="lazy" src="https://www.dropbox.com/s/bntzvjtsadvpz2c/foto7.jpg?raw=1" alt="fot de ave 7" class="gallery__img">
         <div class="gallery__icon-container">
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/75fkzzpj2vw6nja/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/xfkk4efiu899d6s/internet.png?raw=1" title="busacr en la web" alt="buscar en internet"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/bei3xly9f4iam6l/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/0f41vwbu303pggz/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/i74ki5a7rn7701d/internet.png?raw=1" title="buscar en la web" alt="buscar en internet"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/f2tqwtsbq2b0x0o/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
         </div>
       </div>
       <div class="gallery__card">
-        <img loading="lazy" src="https://www.dropbox.com/s/5c8mulkk3lpcdzj/foto8.jpg?raw=1" alt="fot de ave 8" class="gallery__img">
+        <img loading="lazy" src="https://www.dropbox.com/s/jis7kaqiueyzqz3/foto8.jpg?raw=1" alt="fot de ave 8" class="gallery__img">
         <div class="gallery__icon-container">
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/75fkzzpj2vw6nja/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/xfkk4efiu899d6s/internet.png?raw=1" title="busacr en la web" alt="buscar en internet"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/bei3xly9f4iam6l/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/0f41vwbu303pggz/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/i74ki5a7rn7701d/internet.png?raw=1" title="buscar en la web" alt="buscar en internet"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/f2tqwtsbq2b0x0o/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
         </div>
       </div>
       <div class="gallery__card">
-        <img loading="lazy" src="https://www.dropbox.com/s/e366dpjn507l4bn/foto9.jpg?raw=1" alt="fot de ave 9" class="gallery__img">
+        <img loading="lazy" src="https://www.dropbox.com/s/ed08zum38chmy40/foto9.jpg?raw=1" alt="fot de ave 9" class="gallery__img">
         <div class="gallery__icon-container">
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/75fkzzpj2vw6nja/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/xfkk4efiu899d6s/internet.png?raw=1" title="busacr en la web" alt="buscar en internet"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/bei3xly9f4iam6l/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/0f41vwbu303pggz/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/i74ki5a7rn7701d/internet.png?raw=1" title="buscar en la web" alt="buscar en internet"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/f2tqwtsbq2b0x0o/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
         </div>
       </div>
       <div class="gallery__card">
-        <img loading="lazy" src="https://www.dropbox.com/s/jkihlz9acb4aoqo/foto10.jpg?raw=1" alt="fot de ave 10" class="gallery__img">
+        <img loading="lazy" src="https://www.dropbox.com/s/mct6aebey57vjhq/foto10.jpg?raw=1" alt="fot de ave 10" class="gallery__img">
         <div class="gallery__icon-container">
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/75fkzzpj2vw6nja/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/xfkk4efiu899d6s/internet.png?raw=1" title="busacr en la web" alt="buscar en internet"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/bei3xly9f4iam6l/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/0f41vwbu303pggz/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/i74ki5a7rn7701d/internet.png?raw=1" title="buscar en la web" alt="buscar en internet"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/f2tqwtsbq2b0x0o/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
         </div>
       </div>
       <div class="gallery__card">
-        <img loading="lazy" src="https://www.dropbox.com/s/tboaeec6ory21i3/foto11.jpg?raw=1" alt="fot de ave 11" class="gallery__img">
+        <img loading="lazy" src="https://www.dropbox.com/s/oqugfr2r3q390m6/foto11.jpg?raw=1" alt="fot de ave 11" class="gallery__img">
         <div class="gallery__icon-container">
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/75fkzzpj2vw6nja/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/xfkk4efiu899d6s/internet.png?raw=1" title="busacr en la web" alt="buscar en internet"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/bei3xly9f4iam6l/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/0f41vwbu303pggz/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/i74ki5a7rn7701d/internet.png?raw=1" title="buscar en la web" alt="buscar en internet"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/f2tqwtsbq2b0x0o/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
         </div>
       </div>
       <div class="gallery__card">
-        <img loading="lazy" src="https://www.dropbox.com/s/43qnl1joi88krqv/foto12.jpg?raw=1" alt="fot de ave 12" class="gallery__img">
+        <img loading="lazy" src="https://www.dropbox.com/s/1ymagn94cpklssc/foto12.jpg?raw=1" alt="fot de ave 12" class="gallery__img">
         <div class="gallery__icon-container">
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/75fkzzpj2vw6nja/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/xfkk4efiu899d6s/internet.png?raw=1" title="busacr en la web" alt="buscar en internet"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/bei3xly9f4iam6l/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/0f41vwbu303pggz/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/i74ki5a7rn7701d/internet.png?raw=1" title="buscar en la web" alt="buscar en internet"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/f2tqwtsbq2b0x0o/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
         </div>
       </div>
       <div class="gallery__card">
-        <img loading="lazy" src="https://www.dropbox.com/s/sz0fq2xugavlia4/foto13.jpg?raw=1" alt="fot de ave 13" class="gallery__img">
+        <img loading="lazy" src="https://www.dropbox.com/s/vyyro28ishwx97d/foto13.jpg?raw=1" alt="fot de ave 13" class="gallery__img">
         <div class="gallery__icon-container">
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/75fkzzpj2vw6nja/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/xfkk4efiu899d6s/internet.png?raw=1" title="busacr en la web" alt="buscar en internet"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/bei3xly9f4iam6l/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/0f41vwbu303pggz/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/i74ki5a7rn7701d/internet.png?raw=1" title="buscar en la web" alt="buscar en internet"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/f2tqwtsbq2b0x0o/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
         </div>
       </div>
       <div class="gallery__card">
-        <img loading="lazy" src="https://www.dropbox.com/s/befjb1revpbqmlk/foto14.jpg?raw=1" alt="fot de ave 14" class="gallery__img">
+        <img loading="lazy" src="https://www.dropbox.com/s/h8mtn45jshexa7v/foto14.jpg?raw=1" alt="fot de ave 14" class="gallery__img">
         <div class="gallery__icon-container">
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/75fkzzpj2vw6nja/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/xfkk4efiu899d6s/internet.png?raw=1" title="busacr en la web" alt="buscar en internet"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/bei3xly9f4iam6l/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/0f41vwbu303pggz/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/i74ki5a7rn7701d/internet.png?raw=1" title="buscar en la web" alt="buscar en internet"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/f2tqwtsbq2b0x0o/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
         </div>
       </div>
       <div class="gallery__card">
-        <img loading="lazy" src="https://www.dropbox.com/s/0tjpnhhnptwqiub/foto15.jpg?raw=1" alt="fot de ave 15" class="gallery__img">
+        <img loading="lazy" src="https://www.dropbox.com/s/csh9d792i7go61b/foto15.jpg?raw=1" alt="fot de ave 15" class="gallery__img">
         <div class="gallery__icon-container">
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/75fkzzpj2vw6nja/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/xfkk4efiu899d6s/internet.png?raw=1" title="busacr en la web" alt="buscar en internet"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/bei3xly9f4iam6l/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/0f41vwbu303pggz/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/i74ki5a7rn7701d/internet.png?raw=1" title="buscar en la web" alt="buscar en internet"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/f2tqwtsbq2b0x0o/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
         </div>
       </div>
       <div class="gallery__card">
-        <img loading="lazy" src="https://www.dropbox.com/s/cd7rnx2n24bpgpz/foto16.jpg?raw=1" alt="fot de ave 16" class="gallery__img">
+        <img loading="lazy" src="https://www.dropbox.com/s/pch7seqnkvifk60/foto16.jpg?raw=1" alt="fot de ave 16" class="gallery__img">
         <div class="gallery__icon-container">
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/75fkzzpj2vw6nja/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/xfkk4efiu899d6s/internet.png?raw=1" title="busacr en la web" alt="buscar en internet"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/bei3xly9f4iam6l/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/0f41vwbu303pggz/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/i74ki5a7rn7701d/internet.png?raw=1" title="buscar en la web" alt="buscar en internet"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/f2tqwtsbq2b0x0o/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
         </div>
       </div>
       <div class="gallery__card">
-        <img loading="lazy" src="https://www.dropbox.com/s/iygkqze5usyic9g/foto17.jpg?raw=1" alt="fot de ave 17" class="gallery__img">
+        <img loading="lazy" src="https://www.dropbox.com/s/m4xj0akdj2uh1hi/foto17.jpg?raw=1" alt="fot de ave 17" class="gallery__img">
         <div class="gallery__icon-container">
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/75fkzzpj2vw6nja/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/xfkk4efiu899d6s/internet.png?raw=1" title="busacr en la web" alt="buscar en internet"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/bei3xly9f4iam6l/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/0f41vwbu303pggz/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/i74ki5a7rn7701d/internet.png?raw=1" title="buscar en la web" alt="buscar en internet"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/f2tqwtsbq2b0x0o/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
         </div>
       </div>
       <div class="gallery__card">
-        <img loading="lazy" src="https://www.dropbox.com/s/p6howyqjd9i3fm6/foto18.jpg?raw=1" alt="fot de ave 18" class="gallery__img">
+        <img loading="lazy" src="https://www.dropbox.com/s/26bqbgs21y86y2i/foto18.jpg?raw=1" alt="fot de ave 18" class="gallery__img">
         <div class="gallery__icon-container">
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/75fkzzpj2vw6nja/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/xfkk4efiu899d6s/internet.png?raw=1" title="busacr en la web" alt="buscar en internet"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/bei3xly9f4iam6l/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/0f41vwbu303pggz/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/i74ki5a7rn7701d/internet.png?raw=1" title="buscar en la web" alt="buscar en internet"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/f2tqwtsbq2b0x0o/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
         </div>
       </div>
       <div class="gallery__card">
-        <img loading="lazy" src="https://www.dropbox.com/s/i802eogblxotqbu/foto19.jpg?raw=1" alt="fot de ave 19" class="gallery__img">
+        <img loading="lazy" src="https://www.dropbox.com/s/50imtsu6fuh2xqz/foto19.jpg?raw=1" alt="fot de ave 19" class="gallery__img">
         <div class="gallery__icon-container">
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/75fkzzpj2vw6nja/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/xfkk4efiu899d6s/internet.png?raw=1" title="busacr en la web" alt="buscar en internet"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/bei3xly9f4iam6l/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/0f41vwbu303pggz/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/i74ki5a7rn7701d/internet.png?raw=1" title="buscar en la web" alt="buscar en internet"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/f2tqwtsbq2b0x0o/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
         </div>
       </div>
       <div class="gallery__card">
-        <img  src="https://www.dropbox.com/s/bg6cek5ouvtq4x8/foto20.jpg?raw=1" alt="fot de ave 20" class="gallery__img">
+        <img  src="https://www.dropbox.com/s/ufjv4a4qqebqnsz/foto20.jpg?raw=1" class="gallery__img">
         <div class="gallery__icon-container">
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/75fkzzpj2vw6nja/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/xfkk4efiu899d6s/internet.png?raw=1" title="busacr en la web" alt="buscar en internet"></button>
-          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/bei3xly9f4iam6l/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/0f41vwbu303pggz/photo.png?raw=1" title="expandir imagen" alt="expandir imagen"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/i74ki5a7rn7701d/internet.png?raw=1" title="buscar en la web" alt="buscar en internet"></button>
+          <button class="gallery__icon-btn"><img src="https://www.dropbox.com/s/f2tqwtsbq2b0x0o/donwload.png?raw=1" title="descargar imagen" alt="descargar imagen"></button>
         </div>
       </div>
     </section>
@@ -267,7 +267,7 @@
       <header><h2 class="title-base">Para saber mas de ti</h2></header>
       <div class="section-form__template">
         <figure class="section-form__container-img">
-          <img class="section-form__img" src="https://www.dropbox.com/s/ulunec5igsyqt0c/Sent%20messages%20_Monochromatic.svg?raw=1" alt="carta de mensaje">
+          <img class="section-form__img" src="aseets/Sent messages _Monochromatic.svg" alt="carta de mensaje">
         </figure>
         <form class="form-contac" action="">
           <div class="form-contac__sub-section">
@@ -368,11 +368,24 @@
     <div class="sub-list">
       <h3 class="sub-list__title">Redes sociales</h3>
       <ul class="sub-list__container u-list">
-        <li class="u-list__item u-list__item--flex"><a class="sub-list__link u-list__link" href="https://github.com/WanderleeDev" target="_blank" rel="noreferrer nofollow noopener"><img class="sub-list__social-image" src="https://www.dropbox.com/s/9iwt3uwoqhu7ehg/github-mark-white.png?raw=1" alt="github"></a><span>GitHub</span></li>
-        <li class="u-list__item u-list__item--flex"><a class="sub-list__link u-list__link" href="https://es-la.facebook.com/" target="_blank" rel="noreferrer nofollow noopener"><img class="sub-list__social-image" src="https://www.dropbox.com/s/sqpledz5t2acs4o/facebook.png?raw=1" alt="facebook"></a><span>Facebook</span></li>
-        <li class="u-list__item u-list__item--flex"><a class="sub-list__link u-list__link" href="#" rel="noreferrer nofollow noopener"><img class="sub-list__social-image" src="https://www.dropbox.com/s/e846y6jyomtsn6t/whatsapp.png?raw=1" alt="whatsapp"></a><span>Whatsapp</span></li>
-        <li class="u-list__item u-list__item--flex"><a class="sub-list__link u-list__link" href="#" rel="noreferrer nofollow noopener"><img class="sub-list__social-image" src="https://www.dropbox.com/s/isqc0w3yyzxvm0i/gorjeo.png?raw=1" alt="instagram"></a><span>Twitter</span></li>
-        <li class="u-list__item u-list__item--flex"><a class="sub-list__link u-list__link" href="https://www.instagram.com/" target="_blank" rel="noreferrer nofollow noopener"><img class="sub-list__social-image" src="https://www.dropbox.com/s/7ou0epuu5o3bm9z/instagram.png?raw=1" alt="twitter"></a><span>Instagram</span></li>
+        <li class="u-list__item u-list__item--flex">
+          <a class="sub-list__link u-list__link" href="https://github.com/WanderleeDev" target="_blank" rel="noreferrer nofollow noopener"><img class="sub-list__social-image" src="https://www.dropbox.com/s/j3ojdy4lt1qej4r/github-mark-white.png?raw=1" alt="github"><span class="sub-list__social-name">GitHub</span></a>
+        </li>
+        <li class="u-list__item u-list__item--flex">
+          <a class="sub-list__link u-list__link" href="https://www.linkedin.com/in/wanderlee-max/" target="_blank" rel="noreferrer nofollow noopener"><img class="sub-list__social-image" src="https://www.dropbox.com/s/4t4yhltho9vz588/linkedin.png?raw=1" alt="linkedin"><span class="sub-list__social-name">Linkedin</span></a>
+        </li>
+        <li class="u-list__item u-list__item--flex">
+          <a class="sub-list__link u-list__link" href="https://es-la.facebook.com/" target="_blank" rel="noreferrer nofollow noopener"><img class="sub-list__social-image" src="https://www.dropbox.com/s/cwkeq6cvwcrrdmr/facebook.png?raw=1" alt="facebook"><span class="sub-list__social-name sub-list__social-name--line-through">Facebook</span></a>
+        </li>
+        <li class="u-list__item u-list__item--flex">
+          <a class="sub-list__link u-list__link" href="https://web.whatsapp.com" rel="noreferrer nofollow noopener"><img class="sub-list__social-image" src="https://www.dropbox.com/s/2aey0mkrvd9znbg/whatsapp.png?raw=1" alt="whatsapp"><span class="sub-list__social-name sub-list__social-name--line-through">Whatsapp</span></a>
+        </li>
+        <li class="u-list__item u-list__item--flex">
+          <a class="sub-list__link u-list__link" href="https://twitter.com/?lang=es" rel="noreferrer nofollow noopener"><img class="sub-list__social-image" src="https://www.dropbox.com/s/pl7720d1e0u94w1/gorjeo.png?raw=1" alt="twitter"><span class="sub-list__social-name sub-list__social-name--line-through">Twitter</span></a>
+        </li>
+        <li class="u-list__item u-list__item--flex">
+          <a class="sub-list__link u-list__link" href="https://www.instagram.com/" target="_blank" rel="noreferrer nofollow noopener"><img class="sub-list__social-image" src="https://www.dropbox.com/s/eyjjiitq1fg21ry/instagram.png?raw=1" alt="instagram"><span class="sub-list__social-name sub-list__social-name--line-through">Instagram</span></a>
+        </li>
       </ul>
     </div>
     <!-- Card animada -->
@@ -390,7 +403,6 @@
         <a href="index.html" class="bird-fly flock-birds__bird--green" rel="noopener"></a>
       </div>
     </div>
-
     <div class="footer-copy">
       <time datetime="2023">2023 </time>
       <span>&copy;</span> 
@@ -398,4 +410,5 @@
     </div>
   </footer>
 </body>
+<script src="main.js"></script>
 </html>

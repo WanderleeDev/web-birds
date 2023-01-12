@@ -14,7 +14,10 @@
   font-family: 'Open Sans', sans-serif;
 }
 .hero__header {
-  position: relative;
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 6rem;
   grid-area: header;
   display:flex;
   justify-content: space-between;
@@ -23,6 +26,7 @@
   gap: 2rem;
   background-color: #f6a8db;
   border-bottom: 0.2rem double;
+  z-index: 2;
 }
 .main-header{
   display: flex;
@@ -35,7 +39,7 @@
   display: block;
   width: 6.25rem;
   height: 5rem;
-  background: url(https://www.dropbox.com/s/2l0c0covr6te850/parrot-1.png?raw=1) no-repeat;
+  background: url(https://www.dropbox.com/s/w5yalknpsrjsr2w/parrot-1.png?raw=1) no-repeat;
   animation: fly-bird 0.7s steps(9) infinite;
   transition: 0.4s ease-in-out;
 }
@@ -58,10 +62,11 @@
   margin: 0 2rem;
 }
 .navbar__item{
-  padding: 0.3rem 0.5rem;
   border-radius: 1rem;
 }
 .navbar__link{
+  display: block;
+  padding: 0.3rem 0.5rem;
   letter-spacing: 0.1rem;
   color: #2d81f6;
   font-weight: 900;
@@ -187,10 +192,8 @@
   content: "";
   width: 100%;
   height: 100%;
-  background: url(/aseets/335222-3f51b5.svg);
-  background-size: contain;
-  background-position: center;
-  animation: moving-flower 25s linear infinite ;
+  background: url(/aseets/html.svg)no-repeat left top, url(/aseets/css.svg) no-repeat center, url(/aseets/javascript.svg) no-repeat right bottom;
+  background-size:10% 25%;
   z-index: -1;
 }
   .project__container-bird{
@@ -201,14 +204,14 @@
   transition: 3s linear 0.2s;
 }
 .bird-fly--bird-silver{
-  background-image: url(https://www.dropbox.com/s/5oa98ui525thj61/loro-gray.png?raw=1);
+  background-image: url(https://www.dropbox.com/s/hmv3ooo6707krnl/loro-gray.png?raw=1);
 }
 .bird-fly--rotateY-180--bird-green{
   transform: rotateY(180deg);
-  background-image: url(https://www.dropbox.com/s/7nqryl65pxz26dx/loro-green.png?raw=1);
+  background-image: url(https://www.dropbox.com/s/ir4jf7q6i4dlief/loro-green.png?raw=1);
 }
 .bird-fly--bird-gray{
-  background-image: url(https://www.dropbox.com/s/fuup26xakegp7uo/loro-silver.png?raw=1);
+  background-image: url(https://www.dropbox.com/s/ndzzq40tfm85uj5/loro-silver.png?raw=1);
 }
 .up-btn__container{
   position: fixed;
@@ -254,7 +257,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url(https://www.dropbox.com/s/8h5g7dru8j2f1az/to-up.png?raw=1);
+  background-image: url(https://www.dropbox.com/s/87wbk25xnp2knly/to-up%20%281%29.png?raw=1);
   background-size: cover;
   transform: scale(0.8);
   animation: scaleBtn 1.5s linear infinite;
@@ -631,7 +634,11 @@
 }
 .sub-list__social-image{
   width: max(3vw, 2rem);
-  display: inline;
+  display: inline-block;
+  margin-right: 1rem;
+}
+.sub-list__social-name--line-through{
+  text-decoration: line-through;
 }
 .sub-list__link{
   font-size: 0.8rem;
@@ -649,15 +656,15 @@
   background-color: #fff;
 }
 .flock-birds__bird--green{
-  background-image: url(https://www.dropbox.com/s/7nqryl65pxz26dx/loro-green.png?raw=1);
+  background-image: url(https://www.dropbox.com/s/ir4jf7q6i4dlief/loro-green.png?raw=1);
   animation-delay: 0.2s;
 }
 .flock-birds__bird--silver{
-  background-image: url(https://www.dropbox.com/s/fuup26xakegp7uo/loro-silver.png?raw=1);
+  background-image: url(https://www.dropbox.com/s/ndzzq40tfm85uj5/loro-silver.png?raw=1);
   animation-delay: 0.4s;
 }
 .flock-birds__bird--gray{
-  background-image: url(https://www.dropbox.com/s/5oa98ui525thj61/loro-gray.png?raw=1);
+  background-image: url(https://www.dropbox.com/s/hmv3ooo6707krnl/loro-gray.png?raw=1);
   animation-delay: 0.6s;
 }
 .flock-birds__subcontainer{
@@ -696,9 +703,6 @@
   transform: scale(0.9);
   transition: transform 0.3s linear;
 }
-.navbar__toggle:hover .nav-container{
-  display: block;
-}
 .navbar__item:hover{
   background-color: #cb92b7;
 }
@@ -735,18 +739,6 @@
   background-color: #fff;
 }
 /* keyframes */
-@keyframes moving-flower {
-  0%{
-    background-position: 0%, 150%;
-  }
-  50%{
-    background-position: 150%, 0%;
-    filter: hue-rotate(360deg);
-  }
-  100%{
-    background-position: 0, 150%;
-  }
-}
 @keyframes backg-move {
   0%{
     background-position: 0, 100%;
@@ -886,17 +878,22 @@
     width: 100%;
     top:6rem;
     right: 0;
-    z-index: 3;
+    z-index:2;
     background-color: #230722bf;
+  }
+  .nav-container--wacth{
+    display: block;
   }
   .navbar{
     gap: 0;
   }
   .navbar__item{
     width: 100%;
-    padding: 1rem;
     margin: 0.5rem 0;
     text-align: center;
+  }
+  .navbar__link{
+    padding: 1rem;
   }
   .navbar__toggle{
     display: inline-block;
@@ -924,9 +921,6 @@
   }
 }
 @media only screen and (max-width: 32.5rem){
-  .hero__header{
-    position: static;
-  }
   .nav-container{
     position: fixed;
     width: max(60%, 13rem);
