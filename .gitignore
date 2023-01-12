@@ -9,3 +9,5 @@ node_modules
 *.jpeg
 *.jpg
 *.webp
+
+*.zip

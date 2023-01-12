@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Open Sans";
+  src: local(OpenSans-Medium),
+  url(/fonts/OpenSans/OpenSans-Medium.ttf);
+  /* local: busca si el usurio tiene la fuente en su ordenador para no hacer la solicitud al servidor.
+  url: descarga la fuente del servidor */
+  font-display: fallback;
+}
