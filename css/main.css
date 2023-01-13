@@ -121,7 +121,7 @@
 .banner {
   grid-area: banner;
   min-height: 50vh;
-  background: url(/aseets/mountain-purple.svg) no-repeat center;
+  background: url(https://www.dropbox.com/s/x606geuagdj4gq8/mountain-purple.png?raw=1) no-repeat center;
   background-size: cover;
 }
 /* intro */
@@ -220,7 +220,7 @@
   content: "";
   width: 100%;
   height: 100%;
-  background: url(/aseets/html.svg)no-repeat left top, url(/aseets/css.svg) no-repeat center, url(/aseets/javascript.svg) no-repeat right bottom;
+  background: url(https://www.dropbox.com/s/8yek98lt94yu500/html.png?raw=1)no-repeat left top, url(https://www.dropbox.com/s/oyetaruvvkfb66y/css.png?raw=1) no-repeat center, url(https://www.dropbox.com/s/t1278esmsp7qhr4/javascript.png?raw=1) no-repeat right bottom;
   background-size:10% 25%;
   z-index: -1;
 }
