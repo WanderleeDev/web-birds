@@ -1,6 +1,6 @@
 const btnMenu = document.querySelector("#btnMenu");
 const menu = document.querySelector("#menu");
-const menuLink = document.querySelectorAll("#navbarLink")
+const menuLink = document.querySelectorAll(".navbar__link")
 
 btnMenu.addEventListener("click",function(){
   menu.classList.toggle("nav-container--wacth");
