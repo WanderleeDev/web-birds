@@ -9,7 +9,7 @@ Está en una pequeña web creada con el fin de poner en práctica los conocimien
 1. [Organización](#organización-📙 )
 1. [Conclusiones](#conclusiones-🎏)
 
-## <span style="color: hsl(190, 80%, 50%);"> Para empezar 🚀 </span>
+## Para empezar 🚀 
 
 Se deja el nombre del equipo y tecnologías utilizadas para el desarrollo del proyecto.
 
@@ -17,7 +17,7 @@ Se deja el nombre del equipo y tecnologías utilizadas para el desarrollo del pr
 | :--: | :--: | :--: | :--: |
 | Visal Studio Code | Laptop Hp Pavilion dm 1 | GNU Linux (Parrot Home Edition) | HTML <br> CSS <br> Git |
 
-## <span style="color: hsl(190, 80%, 50%);"> Metodología 🅱EⓂ️</span>
+## Metodología 🅱EⓂ️
 
 Puedes leer más de BEM en el siguiente enlace: [conoce más](https://getbem.com).
 
@@ -103,7 +103,7 @@ Los modificadores deben ser descriptivos, en este caso índica un **rotateY en 1
 
 ![recorte 4](https://www.dropbox.com/s/ir4jf7q6i4dlief/loro-green.png?raw=1)
 
-## <span style="color: hsl(190, 80%, 50%);">Organización 📙 </span>
+## Organización 📙 
 
 Se llevó la siguiente estructura para organizar el proyecto:
 
@@ -136,7 +136,7 @@ Se llevó la siguiente estructura para organizar el proyecto:
 
 * .gitignore en la carpeta raíz.
 
-## <span style="color: hsl(190, 80%, 50%);">Conclusiones 🎏 </span>
+## Conclusiones 🎏 
 
 Para concluir indicar que se puede mejorar la implementación de BEM, si bien este es mi primer acercamiento a esta metodología me pareció muy divertida e intuitiva, aunque todavía hay un camino que debo recorrer para dominarla y hacerla una extensión mas de uno mismo. 
 
