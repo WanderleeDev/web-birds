@@ -414,7 +414,7 @@
   border-radius: 1.5rem;
 }
 .gallery__card:nth-child(5n + 4) .gallery__icon-container{
-  z-index: 2;
+  z-index: 1;
 }
 .gallery__card:nth-child(5n + 4)::before,
 .gallery__card:nth-child(5n + 4)::after{
